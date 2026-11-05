@@ -1,3 +1,5 @@
+"use client"
+import MainButton from "./_components/MainButton";
 import { StepBar } from "./_components/StepBar";
 import StepCard from "./_components/StepCard";
 export default function Home() {
@@ -7,7 +9,9 @@ export default function Home() {
         <div className="flex flex-col pt-14 px-28 ">
           <StepBar />
           <StepCard title="Step 1: Add your photos">
-            <p></p>
+            <MainButton onClick={() => alert("Дарлаа!")}>
+              Next: Label photos
+            </MainButton>
           </StepCard>
         </div>
       </div>
